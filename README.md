@@ -14,7 +14,6 @@ A simple React application that allows users to search for movies and view detai
 
 - OMDb API
 
-
 ## How It Works
 
 1. The user enters a movie title in the form.
