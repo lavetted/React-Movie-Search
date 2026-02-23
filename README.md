@@ -1,16 +1,30 @@
-# React + Vite
+# React Movie Search App 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that allows users to search for movies and view details such as title, genre, poster, and year. Movie data is fetched from the OMDb API using asynchronous requests.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React (functional components + hooks)
 
-## React Compiler
+- Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+- Fetch API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- OMDb API
+
+
+## How It Works
+
+1. The user enters a movie title in the form.
+
+2. The form passes the search term to the parent component.
+
+3. The parent component fetches movie data from OMDb.
+
+4. The data is stored in state.
+
+5. The MovieDisplay component renders the results.
+
+State is lifted to the App component so sibling components can share data
